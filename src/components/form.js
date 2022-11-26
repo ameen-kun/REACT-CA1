@@ -35,10 +35,12 @@ class Formv extends React.Component{
             if(y==1){
                 errors["password"] = "Weak Password";
                 document.getElementById("erp").style.color="red";
+                this.setState({pcheck:false});
             }
             if (y==2){
                 errors["password"] = "Medium Password";
                 document.getElementById("erp").style.color="yellow";
+                this.setState({pcheck:false});
             }
             if(y==3){
                 errors["password"] = "Strong Password";
